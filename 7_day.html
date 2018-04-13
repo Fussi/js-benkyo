@@ -1,0 +1,35 @@
+<html>
+    <script>
+        var x =10
+        function a(){
+            x=101
+            return NaN
+        }
+        console.log(window.x)
+        console.log(window.a())
+        // 变量提升
+        // var申明会提升，let不会。const 常量声明
+        //  常量声明
+        const PI = 3.14
+        // PI = 12
+        console.log(PI)
+        console.log(x) // 101 a()修改了全局变量x
+        // 解构
+        var name_list = ["xiaomng","xiaohonh", "xiaohuang"]
+        var [x,y,z] = name_list 
+        console.log(x,y,z)
+
+        var [x, [y, z]]= ['hello', ['JavaScript', 'ES6']];
+        console.log(x,y,z)
+
+        // 对对象进行解构赋值
+        var people = {
+            name :"小明",
+            age : 23,
+            single : 1,
+
+        }
+        var {name,age,single} = people
+        console.log(name)
+    </script>
+</html>
