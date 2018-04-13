@@ -1,14 +1,25 @@
 <html>
     <script>
-        function a (){
+        var x = 100 
+        function a (x){
 
 
-            console.log("1233")
+            console.log("1233"+x)
 
         }
 
 
-        a()
+        a(x)
+        function b(aa,bb,...rest){
+            console.log(aa)
+            console.log(bb)
+            console.log(arguments.length)
+            console.log(rest.length)
+        }
+        
+        b(1,2,3,4,5)
+        
+	console.log(a(x))
     </script>
 
 </html>
